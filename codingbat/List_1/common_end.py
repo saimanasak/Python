@@ -4,31 +4,37 @@ or they have the same last element.
 Both arrays will be length 1 or more.
 
 '''
+'''
+def common_end(a, b):
+  
+  if (len(a)) >=1 and (len(b)) >=1:
+    if (a[len(a)-1] == b[len(b)-1]) or (a[0] == b[0]):
+      return True
+    else:
+      return False
+  else:
+    return False
+
+'''
 def common_end():
 
+    #First List:
     size1 = int(input("Enter size of the first array: "))
-
     array1 = []
+    for i in range(size1):
+        array1.append(int(input("Enter the value: ")))
 
-    for value1 in range(size1):
-
-        value1 = input("Enter the value for the first array: ")
-        val_int1 = int(value1)
-        array1.append(val_int1)
-
+    #Second List:
     size2 = int(input("Enter size of the second array: "))
-
     array2 = []
-
-    for value2 in range(size2):
-
-        value2 = input("Enter the value for the second array: ")
-        val_int2 = int(value2)
-        array2.append(val_int2)
-
+    for i in range(size2):
+        array2.append(int(input("Enter the value: ")))
+        
+    #Printing two given arrays:
     print(array1)
     print(array2)
-
+    
+    #Conditions to check if both the common ends are same or not:
     if size1 >=1 and size2 >=1:
         if (array1[size1-1] == array2[size2-1]) or (array1[0] == array2[0]):
             print("True!!!")
