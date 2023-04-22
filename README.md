@@ -1,3 +1,3 @@
-Python Learning Journey!!!
+Python Journey!!!
 
 Happy Learning😊
