@@ -21,7 +21,7 @@ def sleep_in():
     
     #Vacation and Weekday initialization and declaration:
     weekday = input("Is it weekday??? (y or n) ")
-    vacation = input("ARe you on vacation??? (y or n) ")
+    vacation = input("Are you on vacation??? (y or n) ")
     
     #Checks the condition and prints the update about sleep:
     if weekday == "n" or vacation == "y":
