@@ -40,8 +40,8 @@ def make_bricks():
     else:
         value = goal % 5
     if s >= value:
-        print("True")
+        print("Goal can be achieved :)")
     else:
-        print("False")
+        print("Goal can't be reached :(")
     
 make_bricks()
