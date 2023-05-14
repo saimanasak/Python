@@ -47,7 +47,7 @@ def no_teen_sum():
     c1 = fix_teen(c)
     
     #Prints the sum of final values:
-    print(a1+b1+c1)
+    print(f"Sum without teens: {a1+b1+c1}")
     
 no_teen_sum()
     
