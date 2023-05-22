@@ -159,7 +159,7 @@ def mini_atm():
             
             if name_1 == name_check and govt_id_1 == id_check:
                 my_sql1 = "DELETE FROM customer_info WHERE GOVT_ID = %s"
-                values = (govt_id_1)
+                values = (govt_id_1,)
                 
                 cursor.execute(my_sql1, values)
                 myconnection.commit()
