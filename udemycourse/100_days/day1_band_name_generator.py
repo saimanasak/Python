@@ -10,6 +10,6 @@ def band_name_generator():
     city = input("Enter your city: ")
     pet = input("Enter your pet name: ")
 
-    print(Cyan + "\nYour band name could be:", End + Green + f"{city + ' ' + pet}", End)
+    print(Cyan + "\nYour band name could be:", End + Green + f"{city + ' ' + pet}\n", End)
     
 band_name_generator()
