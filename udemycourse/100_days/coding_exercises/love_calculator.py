@@ -23,11 +23,14 @@ Pink = '\033[95m'
 End = '\033[m'
 
 print(Pink + "\nWelcome to the Love Calculator!!!", End)
+
+#Both the names are initialized and declared:
 name1 = input("\nWhat is your name? \n")
 name2 = input("What is your partner name? \n")
 
 true = love = 0
 
+#Conditions to check for "TRUE" and "LOVE" letters:
 for n1 in name1.upper():
     if n1 == "T" or n1 == "R" or n1 == "U" or n1 == "E":
         true = true + 1
@@ -40,8 +43,10 @@ for n2 in name2.upper():
     if n2 == "L" or n2 == "O" or n2 == "V" or n2 == "E":
         love = love + 1
 
+#Final love score:
 love_score = true*10+love
 
+#Based on the love score prints the status:
 if love_score < 10 or love_score > 90:
     print("\nYour score is {}, you go together like coke and mentos.\n".format(love_score))
 elif love_score > 40 and love_score < 50:

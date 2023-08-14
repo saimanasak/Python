@@ -17,10 +17,12 @@ End = '\033[m'
 
 print(Pink + "\nWelcome to Python Pizza Deliveries!!!", End)
 
+#Size, Pepperoni, and Cheese intialization and declaration:
 size = input("\nWhat size pizza do you want? (S, M, or L) - ")
 add_pepperoni = input("Do you want pepperoni? (Y or N) -  ")
 extra_cheese = input("Do you want extra cheese? (Y or N) - ")
 
+#Cost of all types of pizzas:
 small = 15
 medium = 20
 large = 25
@@ -29,6 +31,7 @@ pep_m_l = 3
 cheese = 1 
 bill = 0 
 
+#Based on the type of ordered pizza, calculates the bill:
 if size == 'S':
     if add_pepperoni == "Y":
         bill = bill + small + pep_s
@@ -47,6 +50,7 @@ if size == 'L':
     elif add_pepperoni == "N":
         bill = bill + large
 
+#Prints the final bill of the order:
 if extra_cheese == "Y":
     print("\nYour final bill is: ${}.".format(bill+cheese))
 else:

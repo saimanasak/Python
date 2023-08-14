@@ -10,11 +10,14 @@ Above 35 they are clinically obese.
 
 '''
 
+#Height and Weight initialization and declaration:
 height = float(input("Enter your height in m: "))
 weight = float(input("Enter your weight in kg: "))
 
+#Formula to calculate BMI:
 bmi = weight/(height*height)
 
+#Conditions to check the BMI value and prints the status:
 if bmi < 18.5:
     print("Your BMI is {}, you are underweight.".format(round(bmi)))
 elif bmi > 18.5 and bmi < 25:
